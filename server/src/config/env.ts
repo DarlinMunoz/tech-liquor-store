@@ -1,0 +1,10 @@
+export const NODE_ENV = process.env.NODE_ENV || "development";
+export const PORT = Number(process.env.PORT) || 4000;
+export const DB_USER = process.env.DB_USER || "postgres";
+export const DB_PASSWORD = process.env.DB_PASSWORD || "postgres";
+export const DB_NAME = process.env.DB_NAME || "postgres";
+export const DB_HOST = process.env.DB_HOST || "localhost";
+export const DB_PORT = Number(process.env.DB_PORT) || 5432;
+export const JWT_SECRET = process.env.JWT_SECRET as string;
+export const BACKEND_URL = process.env.BACKEND_URL as string || "http://localhost:4000";
+export const FRONTEND_URL = process.env.FRONTEND_URL as string || "http://localhost:3000";
