@@ -2,9 +2,9 @@ import app from "@/app";
 import { PORT } from "@/config/env";
 import { AppDataSource } from "@/database/data-source";
 
-function main() {
+async function main() {
   try {
-    AppDataSource.initialize();
+    await AppDataSource.initialize();
     console.log(" Connected to postgresql");
     app.listen(PORT, () => {
       console.log(" http://localhost:" + PORT);

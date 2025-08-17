@@ -8,8 +8,8 @@ import {
 
 @Entity("products")
 export class Product {
-  @PrimaryGeneratedColumn("uuid")
-  id!: string;
+  @PrimaryGeneratedColumn("increment")
+  id!: number;
 
   @Column()
   name!: string;
@@ -25,6 +25,9 @@ export class Product {
 
   @Column({ nullable: true })
   imageUrl!: string;
+
+  @Column({ nullable: true })
+  category!: string;
 
   @CreateDateColumn()
   createdAt!: Date;
